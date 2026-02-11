@@ -1,0 +1,21 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "cricket-app-new",
+                    "appId": "1:853086448434:android:2fceb73b536eac04fb852b",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "cricket-app-new",
+                    "configurations": {
+                        "android": "1:853086448434:android:2fceb73b536eac04fb852b"
+                    }
+                }
+            }
+        }
+    }
+}
