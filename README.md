@@ -1,7 +1,7 @@
 # 🏏 Cricket Scorer
 
 <div align="center">
-  <img src="assets/app_logo.png" alt="Cricket Scorer Logo" width="120" height="120">
+  <img src="cricket_app/assets/app_logo.png" alt="Cricket Scorer Logo" width="120" height="120">
 </div>
 
 <div align="center">
@@ -93,58 +93,73 @@ graph TD
 <table>
   <tr>
     <td align="center">
-      <img src="assets/bg.jpg" width="200" alt="Home Screen"/>
+      <img src="cricket_app/screenshorts/home.png" width="200" alt="Home Dashboard"/>
       <br/>
       <sub><b>Home Dashboard</b></sub>
     </td>
     <td align="center">
-      <img src="assets/orange_cap.png" width="200" alt="Orange Cap"/>
+      <img src="cricket_app/screenshorts/prfile.png" width="200" alt="User Profile"/>
       <br/>
-      <sub><b>Batting Leaderboard</b></sub>
+      <sub><b>User Profile</b></sub>
     </td>
     <td align="center">
-      <img src="assets/purple_cap.png" width="200" alt="Purple Cap"/>
+      <img src="cricket_app/screenshorts/addfriends.png" width="200" alt="Add Friends"/>
       <br/>
-      <sub><b>Bowling Leaderboard</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/placeholder_toss.png" width="200" alt="Toss Screen"/>
-      <br/>
-      <sub><b>Toss & Teams</b></sub>
-    </td>
-    <td align="center">
-      <img src="assets/placeholder_score.png" width="200" alt="Scoring Interface"/>
-      <br/>
-      <sub><b>Live Scoring</b></sub>
-    </td>
-    <td align="center">
-      <img src="assets/placeholder_wicket.png" width="200" alt="Wicket Animation"/>
-      <br/>
-      <sub><b>Wicket Celebration</b></sub>
+      <sub><b>Add Friends</b></sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="assets/placeholder_summary.png" width="200" alt="Match Summary"/>
+      <img src="cricket_app/screenshorts/matchsummary.png" width="200" alt="Match Summary"/>
       <br/>
       <sub><b>Match Summary</b></sub>
     </td>
     <td align="center">
-      <img src="assets/placeholder_history.png" width="200" alt="Match History"/>
+      <img src="cricket_app/screenshorts/leaderboards.png" width="200" alt="Leaderboards"/>
       <br/>
-      <sub><b>Match History</b></sub>
+      <sub><b>Leaderboards</b></sub>
     </td>
     <td align="center">
-      <img src="assets/placeholder_profile.png" width="200" alt="Profile"/>
+      <img src="cricket_app/screenshorts/detailedsummary.png" width="200" alt="Detailed Summary"/>
       <br/>
-      <sub><b>User Profile</b></sub>
+      <sub><b>Detailed Summary</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="cricket_app/screenshorts/create%20teams.png" width="200" alt="Create Teams"/>
+      <br/>
+      <sub><b>Create Teams</b></sub>
+    </td>
+    <td align="center">
+      <img src="cricket_app/screenshorts/teamcreatoins.png" width="200" alt="Team Creation"/>
+      <br/>
+      <sub><b>Team Creation</b></sub>
+    </td>
+    <td align="center">
+      <img src="cricket_app/screenshorts/toss%20screen.png" width="200" alt="Toss Screen"/>
+      <br/>
+      <sub><b>Toss Screen</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="cricket_app/screenshorts/livescoring.png" width="200" alt="Live Scoring"/>
+      <br/>
+      <sub><b>Live Scoring</b></sub>
+    </td>
+    <td align="center">
+      <img src="cricket_app/screenshorts/livescoring1.png" width="200" alt="Scoring Action"/>
+      <br/>
+      <sub><b>Scoring Action</b></sub>
+    </td>
+    <td align="center">
+      <img src="cricket_app/screenshorts/aftermatchsummary.png" width="200" alt="Match Conclusion"/>
+      <br/>
+      <sub><b>Match Conclusion</b></sub>
     </td>
   </tr>
 </table>
-
-> *Note: Replace the placeholder images with actual screenshots from your app to showcase the UI.*
 
 ## 🚀 Getting Started
 

@@ -127,7 +127,7 @@ graph TD
   </tr>
   <tr>
     <td align="center">
-      <img src="screenshorts/create teams.png" width="200" alt="Create Teams"/>
+      <img src="screenshorts/create%20teams.png" width="200" alt="Create Teams"/>
       <br/>
       <sub><b>Create Teams</b></sub>
     </td>
@@ -137,7 +137,7 @@ graph TD
       <sub><b>Team Creation</b></sub>
     </td>
     <td align="center">
-      <img src="screenshorts/toss screen.png" width="200" alt="Toss Screen"/>
+      <img src="screenshorts/toss%20screen.png" width="200" alt="Toss Screen"/>
       <br/>
       <sub><b>Toss Screen</b></sub>
     </td>
