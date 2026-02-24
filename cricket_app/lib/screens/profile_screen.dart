@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import '../models/user_model.dart';
 import '../providers/auth_provider.dart';
+import 'feedback_dialog.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -355,6 +356,11 @@ class _ProfileScreenState extends State<ProfileScreen>
             ),
             actions: [
               IconButton(
+                icon: const Icon(Icons.feedback_outlined, color: Colors.white),
+                onPressed: () => _showFeedbackDialog(user),
+                tooltip: 'Send Feedback',
+              ),
+              IconButton(
                 icon: const Icon(Icons.logout, color: Colors.white),
                 onPressed: () => _showLogoutDialog(context, authProvider),
                 tooltip: 'Logout',
@@ -535,6 +541,83 @@ class _ProfileScreenState extends State<ProfileScreen>
                         _buildFriendRequestsList(),
                       ],
                     ),
+            ),
+          ),
+
+          // Send Feedback Card
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              child: InkWell(
+                onTap: () => _showFeedbackDialog(user),
+                borderRadius: BorderRadius.circular(16),
+                child: Container(
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Color(0xFF1E3A5F),
+                        Color(0xFF0D1B2A),
+                      ],
+                    ),
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFF1E3A5F).withOpacity(0.3),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.greenAccent.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Icon(
+                          Icons.feedback_outlined,
+                          color: Colors.greenAccent,
+                          size: 28,
+                        ),
+                      ),
+                      const SizedBox(width: 16),
+                      const Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Send Feedback',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(height: 4),
+                            Text(
+                              'Help us improve the app with your suggestions',
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: Colors.white70,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const Icon(
+                        Icons.arrow_forward_ios,
+                        color: Colors.white54,
+                        size: 16,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ),
         ],
@@ -860,6 +943,15 @@ class _ProfileScreenState extends State<ProfileScreen>
           ),
         ],
       ),
+    );
+  }
+
+  void _showFeedbackDialog(AppUser user) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => FeedbackDialog(userName: user.name),
     );
   }
 

@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "962644107751-ar126v1a9k7ru0bvu444t1paanul03pv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.a2cstudiosindia.cricket_app",
+            "certificate_hash": "a0d09f51ec62fcee1402b748249ce71ec73314be"
+          }
+        },
+        {
           "client_id": "962644107751-qe953pijsnio0qeaa53ulv7r7or25q1g.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
